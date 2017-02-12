@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.toptracks.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/background">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search Artist"
+        android:iconifiedByDefault="false"
+        android:layout_marginTop="8dp">
+    </SearchView>
+
+    <ListView
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:divider="@android:color/transparent">
+
+    </ListView>
+</LinearLayout>
+<ProgressBar
+    android:id="@+id/loading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="?android:progressBarStyle"
+    android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Artists Found"
+        android:layout_centerInParent="true"
+        android:textSize="24sp"
+        android:id="@+id/notfound"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Your Favorite Artist's Top Tracks "
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:id="@+id/welcome"/>
+</RelativeLayout>

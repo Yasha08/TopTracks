@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_play_preview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.toptracks.PlayPreview"
+    tools:showIn="@layout/activity_play_preview">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/albumImage"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/song"
+        android:textSize="18sp"
+        android:textColor="#000"
+        tools:text="Hello"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/artist"
+            android:textSize="14sp"
+            tools:text="Adele"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginRight="4dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/album"
+            tools:text="21"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_marginLeft="24dp"
+        android:max="30"
+        android:layout_marginRight="24dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/rewind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="8dp"
+            android:src="@android:drawable/ic_media_rew"
+           />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/playpause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:src="@android:drawable/ic_media_play"
+       />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fastforward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:layout_marginBottom="8dp"
+            android:src="@android:drawable/ic_media_ff"
+            />
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000"
+        android:text="* This is a free 30 Seconds preview. *"/>
+</LinearLayout>

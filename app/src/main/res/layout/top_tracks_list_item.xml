@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/albumImage"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_toRightOf="@id/albumImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="8dp">
+
+    <TextView
+        android:layout_width="200dp"
+        android:ellipsize="end"
+        android:layout_height="wrap_content"
+        tools:text="Rolling In the Deep"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/songName"
+        android:textColor="@color/grey"/>
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/artistName"
+        android:textSize="13sp"
+        tools:text="Adele"
+        android:ellipsize="end"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/type"
+        tools:text="Track"
+        android:textSize="10sp"
+        android:layout_marginLeft="16dp"
+        android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="03:54"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"/>
+
+</RelativeLayout>
